@@ -1,11 +1,11 @@
 {
-  "name": "chrome-extension-boilerplate-react",
-  "version": "5.0.4",
-  "description": "A chrome extension boilerplate built with React 18, Webpack 5, and Webpack Dev Server 4",
+  "name": "PhishGuard",
+  "version": "0.1.0",
+  "description": "A google chrome extension to help you avoid phishing scams.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lxieyang/chrome-extension-boilerplate-react.git"
+    "url": "https://github.com/MuteMini/PhishGuard.git"
   },
   "scripts": {
     "build": "node utils/build.js",
