@@ -9,8 +9,15 @@ function getEmailPrediction(text) {
             inputs: [text]
         });
         myObj = response.body.classifications;
+
+        if (myObj[0] == ',0') {
+            myPrediction = 0;
+        }
+        else {
+            myPrediction = 1;
+        }
         return {
-            prediction: myObj[0].prediction,
+            prediction: myPrediction,
             confidence: myObj[0].confidence,
         }
     })();
@@ -25,8 +32,15 @@ function getTextPredictions(text) {
             inputs: [text]
         });
         myObj = response.body.classifications;
+
+        if (myObj[0] == ',0') {
+            myPrediction = 0;
+        }
+        else {
+            myPrediction = 1;
+        }
         return {
-            prediction: myObj[0].prediction,
+            prediction: myPrediction,
             confidence: myObj[0].confidence,
         }
     })();
