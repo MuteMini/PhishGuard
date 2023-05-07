@@ -4,8 +4,19 @@ import refreshOnUpdate from "virtual:reload-on-update-in-view";
 
 refreshOnUpdate("pages/Content/Scanner");
 
-const root = document.createElement("div");
-root.className = "scanner-shadow-ext";
-document.body.append(root);
+let cropOn = false;
 
-createRoot(root).render(<App />);
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  if (
+    request.action === "scan" &&
+    document.getElementsByClassName("scanner-shadow-ext").length <= 0
+  ) {
+    const root = document.createElement("div");
+    root.className = "scanner-shadow-ext";
+    document.body.append(root);
+    document.body.classList.add("no-scroll");
+
+    createRoot(root).render(<App />);
+    cropOn = true;
+  }
+});
