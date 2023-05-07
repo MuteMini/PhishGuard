@@ -4,7 +4,7 @@ import "@pages/popup/index.css";
 import Popup from "@pages/Popup/Popup";
 import refreshOnUpdate from "virtual:reload-on-update-in-view";
 
-refreshOnUpdate("pages/popup");
+refreshOnUpdate("pages/Popup");
 
 function init() {
   const appContainer = document.querySelector("#app-container");
