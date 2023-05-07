@@ -1,9 +1,51 @@
-.overlay {
+@import url("~bootstrap/dist/css/bootstrap.css");
+
+.no-scroll {
+  overflow: hidden !important;
+}
+
+.scanner-shadow-ext {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  width: 100vw;
+  height: 100%;
   z-index: 2147483000;
-  background-color: rgba(0,0,0,0.8);
+}
+
+.scanning {
+  position: fixed;
+  box-shadow: 0 0 0 99999px rgba(0,0,0,0.8);
+}
+
+.popup-card {
+  position: fixed;
+  display: none;
+  width: 18em;
+  z-index: 2147483001;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+.fade {
+  display: block;
+  opacity: 1;
+  animation: fade 0.5s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0.01;
+  }
+  100% {
+    opacity: 1;
+  }
 }
