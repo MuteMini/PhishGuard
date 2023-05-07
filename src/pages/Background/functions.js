@@ -1,4 +1,5 @@
 //functions return prediction and confidence as object values
+//if model predicts real -> prediction = 0, if model predicts fake -> prediction = 1
 
 function getEmailPrediction(text) {
     const cohere = require('cohere-ai');
