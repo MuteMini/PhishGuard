@@ -1,9 +1,128 @@
 .overlay {
   position: fixed;
+  display: flex;
+  align-items: center;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 2147483000;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.results {
+  // align-items: center;
+  // text-align: center;
+  // display: flex;
+  // background-color: white;
+  // margin-left: auto;
+  // margin-right: auto;
+  // margin-top: auto;
+  // margin-bottom: auto;
+  // border-radius: 10px;
+  // height: 25%;
+  // width: 25%;
+
+  align-items: center;
+  text-align: center;
+  display: flex;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 10px;
+  padding: 10px;
+  height: 40%;
+  width: 50%;
+}
+
+.body {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+// .results.card {
+//   margin-top: auto;
+// }
+
+.text {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  align-items: center;
+  text-align: center;
+  white-space: pre-line;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 200;
+}
+
+.text2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 28px;
+  align-items: center;
+  text-align: center;
+  white-space: pre-line;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 200;
+}
+
+
+.btn1 {
+  text-align: center;
+  display: inline-table;
+  background-color: #1597bb;
+  color: #fff;
+  padding: 4px 5px;
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  height: 35px;
+  margin-top: auto;
+  margin-bottom: auto;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn1:hover {
+  background-color: #057299;
+}
+
+.btn2 {
+  background-color: #1597bb;
+  color: #fff;
+  padding: 4px 5px;
+  border: none;
+  border-radius: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100px;
+  height: 35px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn2:hover {
+  background-color: #057299;
+}
+
+.Next-Steps {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2147483000;
+}
+
+.Next-Steps Text {
+  white-space: pre-line;
+  font-size: 24px;
 }
