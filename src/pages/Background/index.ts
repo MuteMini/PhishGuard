@@ -25,17 +25,18 @@ async function classifyText(text: string, modelId: string, apiKey: string): Prom
 function getPrediction(text, type) {
   let promise: Promise<any>;
 
+  //WOULD PUT COHERE MODEL STUFF HERE
   if (type === "text") {
     promise = classifyText(
       text,
-      "d79d8bde-a425-4ddc-8594-58bc0c4b6539-ft",
+      "APIKEY",
       "lMQh1Ns3QkF91ecXnse8DFtd60SdtrYDBQAbqolF"
     );
   }
   if (type === "email") {
     promise = classifyText(
       text,
-      "de27de20-de96-43f8-9d86-97cc711c25c1-ft",
+      "APIKEY",
       "zfchGu7X0Vys0hAy4CNNAVWQurKxcK4GXNjv1Tu9"
     );
   }
