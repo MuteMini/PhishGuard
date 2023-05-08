@@ -4,7 +4,7 @@
     "baseUrl": ".",
     "allowJs": false,
     "target": "esnext",
-    "module": "esnext",
+    "module": "es6",
     "jsx": "react-jsx",
     "skipLibCheck": true,
     "esModuleInterop": true,
